@@ -1,4 +1,6 @@
-#include <iostream>
+// SPDX-FileCopyrightText: 2023 Loren Burkholder <computersemiexpert@outlook.com>
+//
+// SPDX-License-Identifier: GPL-3.0-only
 
 #include <final/final.h>
 

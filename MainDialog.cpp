@@ -45,6 +45,11 @@ MainDialog::MainDialog(finalcut::FApplication *app)
         m_processList->setFocus();
     });
 
+    auto quitMenu = new finalcut::FMenuItem{"&Quit", menubar};
+    quitMenu->addCallback("clicked", [this] {
+        quit();
+    });
+
     setMenuBar(menubar);
 }
 
@@ -64,6 +69,12 @@ void MainDialog::onShow(finalcut::FShowEvent *e)
     m_cpuDialog->show();
     m_memoryDialog->show();
     m_processList->show();
+}
+
+void MainDialog::onClose(finalcut::FCloseEvent *e)
+{
+    hide();
+    e->ignore();
 }
 
 std::string MainDialog::getUptime()

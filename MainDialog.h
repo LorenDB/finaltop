@@ -19,6 +19,7 @@ public:
 
     void onTimer(finalcut::FTimerEvent *e) override;
     void onShow(finalcut::FShowEvent *e) override;
+    void onClose(finalcut::FCloseEvent *e) override;
 
 private:
     ProcessList *m_processList = nullptr;

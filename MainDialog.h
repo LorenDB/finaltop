@@ -8,6 +8,7 @@
 
 #include "CpuDialog.h"
 #include "MemoryDialog.h"
+#include "ProcessList.h"
 
 class MainDialog : public finalcut::FDialog
 {
@@ -20,6 +21,7 @@ public:
     void onShow(finalcut::FShowEvent *e) override;
 
 private:
+    ProcessList *m_processList = nullptr;
     CpuDialog *m_cpuDialog = nullptr;
     MemoryDialog *m_memoryDialog = nullptr;
 

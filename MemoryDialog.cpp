@@ -28,7 +28,7 @@ MemoryDialog::MemoryDialog(finalcut::FWidget *parent)
     ss >> dummy >> swapTotal;
     if (swapTotal > 0)
     {
-        setGeometry({4, 18}, {60, 9});
+        setGeometry({2, 18}, {60, 9});
         auto swapLabel = new finalcut::FLabel{"Swap:", this};
         swapLabel->setGeometry({1, 5}, {5, 1});
         m_swapMeter = new finalcut::FProgressbar{this};
@@ -36,7 +36,7 @@ MemoryDialog::MemoryDialog(finalcut::FWidget *parent)
         m_swapLabel = new finalcut::FLabel{this};
     }
     else
-        setGeometry({4, 18}, {60, 6});
+        setGeometry({2, 18}, {60, 6});
     parseMemUsage();
 
     m_memUsageTimer = addTimer(500);

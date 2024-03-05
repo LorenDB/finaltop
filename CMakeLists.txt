@@ -19,6 +19,8 @@ add_executable(finaltop
     MainDialog.h
     MemoryDialog.cpp
     MemoryDialog.h
+    ProcessList.cpp
+    ProcessList.h
 )
 target_link_libraries(finaltop PRIVATE final)
 

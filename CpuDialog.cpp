@@ -8,7 +8,7 @@ CpuDialog::CpuDialog(finalcut::FWidget *parent)
     : finalcut::FDialog(parent)
 {
     setText("CPU");
-    setGeometry({4, 9}, {60, 7});
+    setGeometry({2, 9}, {60, 7});
 
     m_cpuMeter = new finalcut::FProgressbar{this};
     m_cpuMeter->setGeometry({3, 2}, {50, 1});
